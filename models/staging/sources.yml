@@ -1,0 +1,29 @@
+version: 2
+
+sources:
+  - name: adventure_works
+    schema: adventure_works
+    description: This is adventure works postgres database replica
+    tables:
+      - name: address
+      - name: countryregion
+      - name: creditcard
+      - name: customer
+      - name: person
+      - name: product
+      - name: salesorderdetail
+        description: this table represents in detail all sales
+        columns: 
+          - name: salesorderdetailid
+            description: Primary key of salesorderdetail table
+          - name: salesorderid
+          - name: productid
+            description: Represent the product id
+          - name: orderqty
+          - name: unitprice
+      - name: salesorderheader
+      - name: salesorderheadersalesreason
+      - name: stateprovince
+      - name: salesreason
+      - name: salesterritory
+      - name: store

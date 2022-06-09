@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_sales_order_header
+    description: Tabela com Ids dos pedidos
+
+    columns:
+      - name: sales_order_id
+        description: Id do pedido 
+        tests:
+          - unique
+          - not_null
